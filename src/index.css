@@ -49,7 +49,7 @@
     text-decoration: none;
   }
 
-  .dark .contact-link a:hover {
+  .contact-link.dark a:hover {
     color: var(--color-sky-400);
     text-decoration: none;
   }
