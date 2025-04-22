@@ -96,7 +96,7 @@ function DarkModeSwitch() {
     };
 
     return (
-        <div className="dark-mode-switch fixed right-8 top-8">
+        <div className="dark-mode-switch fixed right-2 lg:right-8 top-2 lg:top-8">
             {typeof(localStorageValue) === 'boolean' && (<MaterialUISwitch
                 checked={localStorageValue}
                 onChange={handleChange}

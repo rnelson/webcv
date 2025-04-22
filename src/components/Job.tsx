@@ -16,7 +16,7 @@ function Job(job: JobDetails) {
     return (
         <div className="job pb-3 lg:pb-2 pt-2">
             <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-4">
-                <div className="lg:col-span-12 font-normal dark:font-light text-2xl/[0.5] lg:pt-2">
+                <div className="lg:col-span-12 font-normal dark:font-light text-2xl lg:text-2xl/[0.5] lg:pt-2">
                     {job.title}
                 </div>
                 <div className="lg:col-span-12 font-medium text-zinc-900 dark:text-zinc-400 pt-2 lg:pt-0 lg:mt-[-0.25rem]">
