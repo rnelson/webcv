@@ -1,6 +1,6 @@
 # CV
 
-!![License](https://img.shields.io/github/license/rnelson/webcv)
+![GitHub License](https://img.shields.io/github/license/rnelson/webcv)
 
 A simple React application to display my résumé. Everything is powered by `/src/assets/cv.json`.
 
