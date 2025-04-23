@@ -7,6 +7,7 @@ import Experience from "./components/Job.tsx";
 import Skills from "./components/Skill.tsx";
 import Education from "./components/Education.tsx";
 import Memberships from "./components/Memberships.tsx";
+import ForkMe from "./components/ForkMe.tsx";
 
 const App = () => {
     const data: CVData = Data();
@@ -18,6 +19,7 @@ const App = () => {
 
     return (
         <>
+            <ForkMe />
             <DarkModeSwitch />
             <Header {...data} />
             <Skills {...data.skills} />
