@@ -40,6 +40,6 @@ const Education = (schools: SchoolList) => {
             </div>
         </section>
     )
-}
+};
 
 export default Education

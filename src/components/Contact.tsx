@@ -30,6 +30,6 @@ const Contact = (cvData: CVData) => {
             </div>
         </section>
     )
-}
+};
 
 export default Contact;

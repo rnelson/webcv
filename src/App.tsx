@@ -8,7 +8,7 @@ import Skills from "./components/Skill.tsx";
 import Education from "./components/Education.tsx";
 import Memberships from "./components/Memberships.tsx";
 
-function App() {
+const App = () => {
     const data: CVData = Data();
 
     useEffect(() => {
@@ -26,7 +26,7 @@ function App() {
             <Memberships {...data.memberships} />
             <Contact {...data} />
         </>
-    )
-}
+    );
+};
 
 export default App;

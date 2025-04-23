@@ -25,6 +25,6 @@ const Header = (data: CVData) => {
             </div>
         </header>
     )
-}
+};
 
 export default Header;

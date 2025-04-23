@@ -46,7 +46,7 @@ const Job = (job: JobDetails) => {
             </div>
         </div>
     )
-}
+};
 
 const Experience = ({jobs}: JobList) => {
     return (
@@ -60,6 +60,6 @@ const Experience = ({jobs}: JobList) => {
             </div>
         </section>
     )
-}
+};
 
 export default Experience;

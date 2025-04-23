@@ -35,7 +35,7 @@ export interface PersonData {
     title: string
 }
 
-export default function Data() {
+const Data = () => {
     return {
         downloadLink: cvJson.downloadLink,
         jobs: {jobs: [...cvJson.jobs as JobDetails[]]},
@@ -45,4 +45,6 @@ export default function Data() {
         skills: {skills: [...cvJson.skills as SkillDetails[]]},
         summary: cvJson.summary
     }
-}
+};
+
+export default Data;

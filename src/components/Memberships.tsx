@@ -53,6 +53,6 @@ const Education = (memberships: MembershipList) => {
             </div>
         </section>
     )
-}
+};
 
 export default Education;

@@ -78,7 +78,7 @@ const useLocalStorage = ({key, initialValue}: { key: string, initialValue: boole
     }, [initialValue, key, value]);
 
     return [value, setValue];
-}
+};
 
 const DarkModeSwitch = () => {
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -103,6 +103,6 @@ const DarkModeSwitch = () => {
             />)}
         </div>
     )
-}
+};
 
 export default DarkModeSwitch;
