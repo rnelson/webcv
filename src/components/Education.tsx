@@ -10,7 +10,7 @@ export interface SchoolList {
     schools: SchoolDetails[]
 }
 
-function Education(schools: SchoolList) {
+const Education = (schools: SchoolList) => {
     return (
         <section className="educations">
             <div className="education-header text-4xl pt-4 font-semibold">Education</div>

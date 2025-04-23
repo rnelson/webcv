@@ -15,7 +15,7 @@ export interface MembershipList {
     organizations: OrganizationDetails[]
 }
 
-function Education(memberships: MembershipList) {
+const Education = (memberships: MembershipList) => {
     return (
         <section className="memberships">
             <div className="memberships-header text-4xl pt-4 font-semibold">Memberships</div>

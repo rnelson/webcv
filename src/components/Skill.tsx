@@ -9,7 +9,7 @@ export interface SkillList {
     skills: SkillDetails[]
 }
 
-function Skills(skills: SkillList) {
+const Skills = (skills: SkillList) => {
     return (
         <section id="skills">
             <div className="flex justify-center">

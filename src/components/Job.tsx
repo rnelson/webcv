@@ -11,8 +11,7 @@ export interface JobList {
     jobs: JobDetails[]
 }
 
-
-function Job(job: JobDetails) {
+const Job = (job: JobDetails) => {
     return (
         <div className="job pb-3 lg:pb-2 pt-2">
             <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-4">
@@ -49,7 +48,7 @@ function Job(job: JobDetails) {
     )
 }
 
-function Experience({jobs}: JobList) {
+const Experience = ({jobs}: JobList) => {
     return (
         <section id="experience">
             <div className="experience-header text-4xl pt-4 font-semibold">Experience</div>

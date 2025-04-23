@@ -1,6 +1,6 @@
 ﻿import {CVData} from "../Data.tsx";
 
-function Contact(cvData: CVData) {
+const Contact = (cvData: CVData) => {
     const data = cvData.person;
     const downloadLink = cvData.downloadLink;
 

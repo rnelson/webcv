@@ -1,6 +1,6 @@
 ﻿import {CVData, PersonData} from "../Data.tsx";
 
-function Header(data: CVData) {
+const Header = (data: CVData) => {
     const person: PersonData = data.person;
 
     return (
