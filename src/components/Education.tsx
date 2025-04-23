@@ -29,7 +29,7 @@ const Education = (schools: SchoolList) => {
                                 <div className="col-span-1 lg:col-span-9"><span className="font-medium text-zinc-950 dark:text-zinc-400">{school.degree}</span></div>
                             </div>
                             {school.other?.length && (
-                                <div className="grid grid-cols-1 mt-[-1.25rem] lg:mt-0 lg:grid-cols-12 lg:gap-4">
+                                <div className="grid grid-cols-1 mt-[-1.25rem] lg:mt-[-0.25rem] lg:grid-cols-12 lg:gap-4">
                                     <div className="col-span-1 lg:col-span-3">&nbsp;</div>
                                     <div className="col-span-1 lg:col-span-9"><span className="italic text-lg/[1.2]">{school.other}</span></div>
                                 </div>
