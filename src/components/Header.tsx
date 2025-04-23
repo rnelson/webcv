@@ -21,7 +21,7 @@ const Header = (data: CVData) => {
                 </div>
             )}
             <div className="grid grid-cols-4 m-2">
-                <div className="col-start-2 col-span-2 flex justify-center text-md/[1.6] lg:text-xl/[1.6] font-light">{data.summary}</div>
+                <div className="col-start-1 col-span-4 md:col-start-2 md:col-span-2 flex justify-center text-md/[1.6] lg:text-xl/[1.6] font-light">{data.summary}</div>
             </div>
         </header>
     )
