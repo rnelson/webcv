@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b10b1622-c45d-49f9-a7dd-9b3651d9ba92/deploy-status)](https://app.netlify.com/sites/graceful-halva-2f1868/deploys) ![GitHub License](https://img.shields.io/github/license/rnelson/webcv)
 
-A simple React application to display my résumé. Everything is powered by `/src/assets/cv.json`.
+A simple React application to display my résumé. Everything is powered by [`/src/assets/cv.json`](https://github.com/rnelson/webcv/blob/main/src/assets/cv.json).
 
 ## Usage
 
