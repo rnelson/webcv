@@ -21,11 +21,11 @@ const Job = (job: JobDetails) => {
                 <div className="lg:col-span-12 font-medium text-zinc-900 dark:text-zinc-400 pt-2 lg:pt-0 lg:mt-[-0.25rem]">
                     {job.company}
                 </div>
-                <div className="lg:col-span-3 font-normal text-zinc-900 dark:text-zinc-400 lg:mt-[-0.75rem]">
+                <div className="lg:col-span-2 font-normal text-zinc-900 dark:text-zinc-400 lg:mt-[-0.75rem]">
                     <i className="fa-regular fa-calendar-range pe-2"></i>
                     {job.startDate} <span className="text-xl/[1.2]"> &ndash; </span> {job.endDate}
                 </div>
-                <div className="lg:col-span-3 font-normal text-zinc-900 dark:text-zinc-400 lg:mt-[-0.75rem]">
+                <div className="lg:col-span-4 font-normal text-zinc-900 dark:text-zinc-400 lg:mt-[-0.75rem]">
                     <i className="fa-regular fa-location-dot pe-1"></i>
                     {job.companyLocation}
                 </div>
