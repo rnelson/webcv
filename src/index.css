@@ -30,12 +30,12 @@
     color: var(--color-sky-400);
   }
 
-  a.dark {
+  .dark a {
     color: var(--color-sky-400);
     text-decoration: inherit;
   }
 
-  a.dark:hover {
+  .dark a:hover {
     color: var(--color-sky-700);
   }
 
@@ -49,7 +49,7 @@
     text-decoration: none;
   }
 
-  .contact-link.dark a:hover {
+  .dark .contact-link a:hover {
     color: var(--color-sky-400);
     text-decoration: none;
   }
