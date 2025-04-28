@@ -1,4 +1,5 @@
 ﻿import {Fragment} from "react";
+import OptionalLink from "./Helpers.tsx";
 
 export interface OrganizationChildDetails {
     name: string,
@@ -15,6 +16,31 @@ export interface MembershipList {
     organizations: OrganizationDetails[]
 }
 
+const Children = (children?: OrganizationChildDetails[]) => {
+    if (children?.length === 0) { return <></>; }
+
+    return (
+        <>
+            <span> (</span>
+            {
+                children?.map((child, idx) => {
+                    return (
+                        <Fragment key={child.name}>
+                            <>{OptionalLink(child.name, child.url)}</>
+                            {
+                                idx < children?.length - 1 && (
+                                    <span key={`${child.name}comma`} style={{display: "inline"}}>, </span>
+                                )
+                            }
+                        </Fragment>
+                    );
+                })
+            }
+            <span>)</span>
+        </>
+    );
+};
+
 const Education = (memberships: MembershipList) => {
     return (
         <section className="memberships">
@@ -23,29 +49,9 @@ const Education = (memberships: MembershipList) => {
                 {
                     memberships.organizations.map(org =>
                         <Fragment key={org.name}>
-                            <div className="organization pb-2 pt-2 font-light text-xl/[1.2] lg:text-2xl/[1.2]">
-                                {org.url?.length && (
-                                    <a href={org.url} target="_blank">{org.name}</a>
-                                )}
-                                {!org.url?.length && (
-                                    <span>{org.name}</span>
-                                )}
-                                {org.children?.length && (
-                                    <> (</>
-                                )}
-                                {org.children?.map((child, idx) => {
-                                    return (
-                                        <Fragment key={child.name}>
-                                            <a key={child.name} href={child.url} target="_blank">{child.name}</a>
-                                            {idx < org.children?.length - 1 && (
-                                                <span key={`${child.name}comma`} style={{display: "inline"}}>, </span>
-                                            )}
-                                        </Fragment>
-                                    )
-                                })}
-                                {org.children?.length && (
-                                    <>)</>
-                                )}
+                            <div className="organization pb-2 pt-2 font-light text-xl/[1.2] lg:text-xl/[0.8]">
+                                <>{OptionalLink(org.name, org.url)}</>
+                                <>{Children(org.children)}</>
                             </div>
                         </Fragment>
                     )
