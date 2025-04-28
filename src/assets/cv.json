@@ -92,6 +92,21 @@
           "url": "https://www.sigops.org"
         }
       ]
+    },
+    {
+      "name": "Heron Haven",
+      "url": "https://heronhaven.org",
+      "children": [
+        {
+          "name": "Heron Haven Photography Club",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "name": "Omaha Astronomical Society",
+      "url": "https://www.omahaastro.com",
+      "children": []
     }
   ],
   "person": {
