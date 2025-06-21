@@ -5,7 +5,6 @@ import {SchoolDetails, SchoolList} from "./components/Education.tsx";
 import {MembershipList, OrganizationDetails} from "./components/Memberships.tsx";
 
 export interface CVData {
-    downloadLink: string,
     jobs: JobList,
     memberships: MembershipList,
     person: PersonData,
@@ -15,7 +14,8 @@ export interface CVData {
 }
 
 export interface WebLinkData {
-    fakey: string,
+    fakey?: string | undefined,
+    text: string,
     url: string
 }
 
@@ -37,7 +37,6 @@ export interface PersonData {
 
 const Data = () => {
     return {
-        downloadLink: cvJson.downloadLink,
         jobs: {jobs: [...cvJson.jobs as JobDetails[]]},
         memberships: {organizations: [...cvJson.memberships as OrganizationDetails[]]},
         person: {...cvJson.person as PersonData, links: {...cvJson.person.links as LinkData}},

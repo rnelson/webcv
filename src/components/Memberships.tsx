@@ -41,7 +41,7 @@ const Children = (children?: OrganizationChildDetails[]) => {
     );
 };
 
-const Education = (memberships: MembershipList) => {
+const Memberships = (memberships: MembershipList) => {
     return (
         <section className="memberships">
             <div className="memberships-header text-4xl pt-4 font-semibold">Memberships</div>
@@ -61,4 +61,4 @@ const Education = (memberships: MembershipList) => {
     )
 };
 
-export default Education;
+export default Memberships;
