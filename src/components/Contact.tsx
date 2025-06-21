@@ -1,8 +1,9 @@
 ﻿import {CVData} from "../Data.tsx";
+import PdfResume from "./PdfResume.tsx";
+import {PDFDownloadLink} from "@react-pdf/renderer";
 
 const Contact = (cvData: CVData) => {
     const data = cvData.person;
-    const downloadLink = cvData.downloadLink;
 
     return (
         <section id="contact" className="pt-8">
@@ -22,11 +23,13 @@ const Contact = (cvData: CVData) => {
                         <a href={data.links.web.url} target="_new"><i className={data.links.web.fakey}></i></a>
                     </div>
                 )}
-                {downloadLink?.length && (
-                    <div className="contact-link pb-6 pe-6">
-                        <a href={downloadLink} target="_new"><i className="fa-light fa-file-pdf"></i></a>
-                    </div>
-                )}
+                <div className="contact-link pb-6 pe-6">
+                    <PDFDownloadLink document={<PdfResume />} fileName="RossNelson.pdf">
+                        { params =>
+                            params.loading ? '' : (<i className="fa-light fa-file-pdf"></i>)
+                        }
+                    </PDFDownloadLink>
+                </div>
             </div>
         </section>
     )
