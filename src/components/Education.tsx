@@ -19,19 +19,14 @@ const Education = (schools: SchoolList) => {
                     schools.schools.map(school =>
                         <div key={school.degree} className="school pb-2 pt-2 font-light text-xl/[1.2] lg:text-2xl/[1.2]">
                             <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-4">
-                                <div className="col-span-1 lg:col-span-3">
-                                    <div>{school.startYear} <span className="text-xl/[1.2]"> &ndash; </span> {school.endYear}</div>
-                                </div>
-                                <div className="col-span-1 lg:col-span-9"><span>{school.school}</span></div>
+                                <div className="col-span-1 lg:col-span-9"><span className="font-medium text-zinc-950 dark:text-zinc-400">{school.school}</span></div>
                             </div>
                             <div className="grid grid-cols-1 mt-[-1.25rem] lg:mt-0 lg:grid-cols-12 lg:gap-4">
-                                <div className="col-span-1 lg:col-span-3">&nbsp;</div>
-                                <div className="col-span-1 lg:col-span-9"><span className="font-medium text-zinc-950 dark:text-zinc-400">{school.degree}</span></div>
+                                <div className="col-span-1 lg:col-span-9">{school.degree}</div>
                             </div>
                             {school.other?.length && (
                                 <div className="grid grid-cols-1 mt-[-1.25rem] lg:mt-[-0.25rem] lg:grid-cols-12 lg:gap-4">
-                                    <div className="col-span-1 lg:col-span-3">&nbsp;</div>
-                                    <div className="col-span-1 lg:col-span-9"><span className="italic text-lg/[1.2]">{school.other}</span></div>
+                                    <div className="col-span-1 lg:col-span-9"><span className="text-lg/[1.2]">{school.other}</span></div>
                                 </div>
                             )}
                         </div>

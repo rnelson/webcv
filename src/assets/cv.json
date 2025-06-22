@@ -10,6 +10,19 @@
   ],
   "jobs": [
     {
+      "company": "Layoff due to position elimination",
+      "companyLocation": "Omaha, NE, US",
+      "details": [
+        "Upskilling on React, Tailwind CSS, and Netlify",
+        "Staying up-to-date on modern .NET releases",
+        "Building a data-driven résumé website/PDF generator in React",
+        "Maintaining numerous personal projects in C# and Javascript"
+      ],
+      "endDate": "Present",
+      "startDate": "12/2024",
+      "title": "Job Seeking/Professional Development"
+    },
+    {
       "company": "Nearform",
       "companyLocation": "Tramore, Co. Waterford, IE",
       "details": [
@@ -25,9 +38,9 @@
       "company": "Fiserv (First Data)",
       "companyLocation": "Omaha, NE, US",
       "details": [
-        "Lead developer of in-house softphones (C#, WPF, .NET Framework; connected to Genesys and Avaya platforms) that are used by both Fiserv and vendor call centers",
+        "Led development of in-house softphones (C#, WPF, .NET Framework; connected to Genesys and Avaya platforms) used by both Fiserv and vendor call centers",
         "Developed internal and external APIs in .NET",
-        "Lead the effort to implement CI/CD across all applications within the contact center organization",
+        "Spearheaded the effort to implement CI/CD across all applications within the contact center organization",
         "Mentored junior developers"
       ],
       "endDate": "6/2023",
@@ -38,7 +51,7 @@
       "company": "Intrado (West Corporation)",
       "companyLocation": "Omaha, NE, US",
       "details": [
-        "Team lead for the team that was dedicated to Walmart",
+        "Served as development team lead dedicated to a multi-billion dollar retail client",
         "Built voice call notification applications, backend services, libraries, and internal tools",
         "Represented the development team on internal and client meetings",
         "Mentored developers",
@@ -47,30 +60,6 @@
       "endDate": "7/2018",
       "startDate": "7/2015",
       "title": "Team Lead/Software Analyst"
-    },
-    {
-      "company": "HobbyTown USA",
-      "companyLocation": "Lincoln, NE, US",
-      "details": [
-        "Maintained the legacy in-house point of sale (POS) software (VB6)",
-        "Assisted in the design and early implementation of a web-based replacement POS",
-        "Maintained internal desktop and web applications written in C#, VB.NET, and VBScript"
-      ],
-      "endDate": "7/2015",
-      "startDate": "7/2012",
-      "title": "Software Engineer"
-    },
-    {
-      "company": "University of Nebraska-Lincoln Libraries",
-      "companyLocation": "Lincoln, NE, US",
-      "details": [
-        "Built a Java web application for the collection of metadata and storage system used for long-term archival of academic research projects.",
-        "Maintained existing PHP web applications",
-        "Wrote C# desktop applications for the library IT team, including a kiosk application restricting use of certain computers to only catalog browsing."
-      ],
-      "endDate": "7/2012",
-      "startDate": "2/2011",
-      "title": "Software Developer"
     }
   ],
   "memberships": [
@@ -176,7 +165,28 @@
       ],
       "list": true,
       "name": "Databases"
+    },
+    {
+      "fakey": "fa-briefcase",
+      "items": [
+        "Interviewing",
+        "mentoring junior developers",
+        "upskilling colleagues"
+      ],
+      "list": true,
+      "name": "Leadership Strengths"
+    },
+    {
+      "fakey": "fa-head-side-brain",
+      "items": [
+        "Constant upskilling",
+        "improvement-driven",
+        "resourceful",
+        "adaptable"
+      ],
+      "list": true,
+      "name": "Personal Traits"
     }
   ],
-  "summary": "Specialized in backend development with 14+ years of experience and a love for mentoring others."
+  "summary": "Specialist in backend development with over 20 years of experience, seeking a senior-level engineering role with opportunities for mentoring, growth, and professional development. Adept at tailoring communication to a wide array of audiences."
 }

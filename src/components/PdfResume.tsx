@@ -38,6 +38,12 @@ const PdfStyle = StyleSheet.create({
         fontFamily: "Helvetica-Oblique",
         display: "flex"
     },
+    personName: {
+        marginTop: 10,
+        fontSize: 16,
+        fontFamily: "Helvetica-Bold",
+        fontWeight: "semibold",
+    },
     sectionHeader: {
         marginTop: 10,
         marginBottom: 5,
@@ -47,6 +53,9 @@ const PdfStyle = StyleSheet.create({
     },
     spacing: {
         marginTop: 7
+    },
+    normalText: {
+        marginRight: 25
     },
     indentedBullet: {
         marginLeft: 16,
@@ -144,14 +153,15 @@ const PdfResume = () => {
         <Document title="Resume - Ross Nelson" author="Ross Nelson" language="en">
             <Page size="LETTER" style={[PdfStyle.document]}>
                 <View>
-                    <Text>{person.name}</Text>
+                    <Text style={[PdfStyle.personName]}>{person.name}</Text>
                     <Text>{person.location}</Text>
+                    <Text><Link src={`mailto:{person.email}`}>{person.email}</Link></Text>
                     <Text>{CommaSeparatedLinks(links)}</Text>
                 </View>
 
                 <View>
                     <Text style={[PdfStyle.sectionHeader]}>Summary Statement</Text>
-                    <Text>{data.summary}</Text>
+                    <Text style={[PdfStyle.normalText]}>{data.summary}</Text>
                 </View>
 
                 <View>
@@ -172,8 +182,17 @@ const PdfResume = () => {
                         jobs.jobs.map(job =>
                             <Fragment key={job.endDate}>
                                 <View>
-                                    <Text><Text style={[PdfStyle.bold]}>{job.company}, {job.companyLocation}</Text> - <Text style={[PdfStyle.italic]}>{job.title}</Text></Text>
-                                    <Text>{job.startDate} - {job.endDate}</Text>
+                                    <Text style={[PdfStyle.italic]}>{job.startDate} - {job.endDate}</Text>
+                                    <Text>
+                                        <Text style={[PdfStyle.bold]}>{job.company}</Text>,
+                                        <Text>{job.companyLocation}</Text>
+                                        {job.title?.length > 0 && (
+                                            <>
+                                                <Text> - </Text>
+                                                <Text style={[PdfStyle.italic]}>{job.title}</Text>
+                                            </>
+                                        )}
+                                    </Text>
 
                                     <View>
                                         {
@@ -201,13 +220,12 @@ const PdfResume = () => {
                                 <View>
                                     <Text>
                                         <Text style={[PdfStyle.bold]}>{school.school}</Text>
-                                        <Text style={[PdfStyle.italic]}> ({school.startYear} - {school.endYear})</Text>
                                     </Text>
                                     <Text>{school.degree}</Text>
                                     <Text>
                                         {
                                             school.other?.length && (
-                                                <Text style={[PdfStyle.italic]}>{school.other}</Text>
+                                                <Text>{school.other}</Text>
                                             )
                                         }
                                     </Text>

@@ -22,7 +22,7 @@ const Skills = (skills: SkillList) => {
                                             {skill.fakey?.length && (
                                                 <i className={`text-sky-400 dark:text-sky-500 pe-2 fa-thin ${skill.fakey}`}></i>
                                             )}
-                                            <span className="skill-name font-medium">{skill.name}:</span>
+                                            <span className="skill-name font-medium">{skill.name}</span>
                                         </div>
                                         <div className="skill-body">
                                             <div className="skill-items font-light">
