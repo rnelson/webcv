@@ -13,10 +13,10 @@
       "company": "Layoff due to position elimination",
       "companyLocation": "Omaha, NE, US",
       "details": [
-        "Upskilling on React, Tailwind CSS, and Netlify",
+        "Upskilling on React, Tailwind CSS, Netlify, and Go",
         "Staying up-to-date on modern .NET releases",
         "Building a data-driven résumé website/PDF generator in React",
-        "Maintaining numerous personal projects in C# and Javascript"
+        "Maintaining numerous personal projects written in C# and Javascript"
       ],
       "endDate": "Present",
       "startDate": "12/2024",
@@ -28,7 +28,9 @@
       "details": [
         "Modernized legacy ASP.NET applications to .NET 6, MudBlazor, and Azure",
         "Migrated from on-prem IdentityServer to cloud-hosted Microsoft Entra ID (formerly Azure B2C)",
-        "Migrated Android and iOS mobile applications from Xamarin to .NET MAUI"
+        "Migrated Android and iOS mobile applications from Xamarin to .NET MAUI",
+        "Upskilled on Node.js and Fastify",
+        "Completed freeCodeCamp's \"Foundational C# with Microsoft\" certification"
       ],
       "endDate": "12/2024",
       "startDate": "6/2023",
@@ -41,7 +43,7 @@
         "Led development of in-house softphones (C#, WPF, .NET Framework; connected to Genesys and Avaya platforms) used by both Fiserv and vendor call centers",
         "Developed internal and external APIs in .NET",
         "Spearheaded the effort to implement CI/CD across all applications within the contact center organization",
-        "Mentored junior developers"
+        "Mentored junior developers on WPF development, API architecture, and the Genesys platform"
       ],
       "endDate": "6/2023",
       "startDate": "7/2018",
@@ -54,7 +56,7 @@
         "Served as development team lead dedicated to a multi-billion dollar retail client",
         "Built voice call notification applications, backend services, libraries, and internal tools",
         "Represented the development team on internal and client meetings",
-        "Mentored developers",
+        "Mentored developers on PHP, Java, internal platforms, and Spring Boot",
         "Authored development policies and standards for the team"
       ],
       "endDate": "7/2018",
