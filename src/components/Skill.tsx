@@ -14,7 +14,7 @@ const Skills = (skills: SkillList) => {
         <section id="skills">
             <div className="flex justify-center">
                 <div className="container place-items-center p-2">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
                         {
                             skills.skills.map(skill =>
                                 <article key={skill.name} className="skill bg-zinc-200 text-zinc-800 dark:bg-zinc-200 dark:text-zinc-800 rounded-3xl p-4 text-md lg:text-xl">
