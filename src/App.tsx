@@ -9,6 +9,19 @@ import Education from "./components/Education.tsx";
 import Memberships from "./components/Memberships.tsx";
 import ForkMe from "./components/ForkMe.tsx";
 
+const Resume = (data: CVData) => {
+    return (
+        <>
+            <Header {...data} />
+            <Skills {...data.skills} />
+            <Experience {...data.jobs} />
+            <Education {...data.schools} />
+            <Memberships {...data.memberships} />
+            <Contact {...data} />
+        </>
+    );
+};
+
 const App = () => {
     const data: CVData = Data();
 
@@ -21,12 +34,7 @@ const App = () => {
         <>
             <ForkMe />
             <DarkModeSwitch />
-            <Header {...data} />
-            <Skills {...data.skills} />
-            <Experience {...data.jobs} />
-            <Education {...data.schools} />
-            <Memberships {...data.memberships} />
-            <Contact {...data} />
+            <Resume {...data} />
         </>
     );
 };

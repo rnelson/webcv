@@ -41,24 +41,26 @@ const Children = (children?: OrganizationChildDetails[]) => {
     );
 };
 
-const Education = (memberships: MembershipList) => {
+const Memberships = (memberships: MembershipList) => {
     return (
         <section className="memberships">
             <div className="memberships-header text-4xl pt-4 font-semibold">Memberships</div>
             <div className="memberships-list">
+                <ul className="list-disc list-inside">
                 {
                     memberships.organizations.map(org =>
                         <Fragment key={org.name}>
-                            <div className="organization pb-2 pt-2 font-light text-xl/[0.7] lg:text-xl/[0.8]">
+                            <li className="organization pb-2 pt-2 font-light text-xl/[1.2] lg:text-xl/[0.8]">
                                 <>{OptionalLink(org.name, org.url)}</>
                                 <>{Children(org.children)}</>
-                            </div>
+                            </li>
                         </Fragment>
                     )
                 }
+                </ul>
             </div>
         </section>
     )
 };
 
-export default Education;
+export default Memberships;
