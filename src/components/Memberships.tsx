@@ -50,7 +50,7 @@ const Memberships = (memberships: MembershipList) => {
                 {
                     memberships.organizations.map(org =>
                         <Fragment key={org.name}>
-                            <li className="organization pb-2 pt-2 font-light text-xl/[0.7] lg:text-xl/[0.8]">
+                            <li className="organization pb-2 pt-2 font-light text-xl/[1] lg:text-xl/[0.8]">
                                 <>{OptionalLink(org.name, org.url)}</>
                                 <>{Children(org.children)}</>
                             </li>
