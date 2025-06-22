@@ -17,7 +17,7 @@ const Education = (schools: SchoolList) => {
             <div className="education-list">
                 {
                     schools.schools.map(school =>
-                        <div key={school.degree} className="school pb-2 pt-2 font-light text-xl/[1.2] lg:text-2xl/[1.2]">
+                        <div key={school.degree} className="school pb-2 pt-2 font-light text-xl/[1.4] lg:text-2xl/[1.2]">
                             <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-4">
                                 <div className="col-span-1 lg:col-span-9"><span className="font-medium text-zinc-950 dark:text-zinc-400">{school.school}</span></div>
                             </div>
