@@ -21,11 +21,11 @@ const Education = (schools: SchoolList) => {
                             <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-4">
                                 <div className="col-span-1 lg:col-span-9"><span className="font-medium text-zinc-950 dark:text-zinc-400">{school.school}</span></div>
                             </div>
-                            <div className="grid grid-cols-1 mt-[-1.25rem] lg:mt-0 lg:grid-cols-12 lg:gap-4">
+                            <div className="grid grid-cols-1 mt-[-1.5rem] lg:mt-[0.15rem] lg:grid-cols-12 lg:gap-4">
                                 <div className="col-span-1 lg:col-span-9">{school.degree}</div>
                             </div>
                             {school.other?.length && (
-                                <div className="grid grid-cols-1 mt-[-1.25rem] lg:mt-[-0.25rem] lg:grid-cols-12 lg:gap-4">
+                                <div className="grid grid-cols-1 mt-[-1.5rem] lg:mt-[-0.05rem] lg:grid-cols-12 lg:gap-4">
                                     <div className="col-span-1 lg:col-span-9"><span className="text-lg/[1.2]">{school.other}</span></div>
                                 </div>
                             )}
