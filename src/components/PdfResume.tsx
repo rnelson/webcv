@@ -1,5 +1,5 @@
 ﻿import {SkillList} from "./Skill.tsx";
-import {Text, Link, View, StyleSheet, Page, Document, Font} from '@react-pdf/renderer';
+import {Document, Font, Image, Link, Page, StyleSheet, Text, View} from '@react-pdf/renderer';
 import Data, {WebLinkData} from "../Data.tsx";
 import {JobList} from "./Job.tsx";
 import {Fragment} from "react";
@@ -38,11 +38,19 @@ const PdfStyle = StyleSheet.create({
         fontFamily: "Helvetica-Oblique",
         display: "flex"
     },
+    header: {
+        alignItems: "center",
+        marginBottom: 10
+    },
     personName: {
         marginTop: 10,
-        fontSize: 16,
+        marginBottom: 3,
+        fontSize: 24,
         fontFamily: "Helvetica-Bold",
-        fontWeight: "semibold",
+        fontWeight: "semibold"
+    },
+    otherHeaderText: {
+        fontSize: 8
     },
     sectionHeader: {
         marginTop: 10,
@@ -53,6 +61,14 @@ const PdfStyle = StyleSheet.create({
     },
     spacing: {
         marginTop: 7
+    },
+    headerSpacer: {
+        height: 1,
+        width: 8
+    },
+    headerSpacerSmall: {
+        height: 1,
+        width: 3
     },
     normalText: {
         marginRight: 25
@@ -68,6 +84,17 @@ const PdfStyle = StyleSheet.create({
         backgroundColor: "white",
         color: "white",
         fontSize: 1
+    },
+    horizontalBar: {
+        marginTop: -2,
+        marginBottom: 2,
+        height: 0.5,
+        width: "97%",
+    },
+    headerImage: {
+        height: 7,
+        width: 7,
+        marginRight: 3
     }
 });
 
@@ -88,10 +115,21 @@ const CommaSeparatedLinks = (links: WebLinkData[]) => {
                 links?.map((child, idx) => {
                     return (
                         <Fragment key={child.text}>
-                            <><Link src={child.url}>{child.text}</Link></>
+                            <>
+                                { (child.pdfImage?.length || 0) > 0 && (
+                                    <>
+                                        <Image
+                                            source={`${child.pdfImage}`}
+                                            style={[PdfStyle.headerImage]}
+                                        />
+                                        <Image src="/transparent.png" style={[PdfStyle.headerSpacerSmall]}/>
+                                    </>
+                                )}
+                                <Link src={child.url}>{child.text}</Link>
+                            </>
                             {
                                 idx < links?.length - 1 && (
-                                    <Text>, </Text>
+                                    <Image src="/transparent.png" style={[PdfStyle.headerSpacer]}/>
                                 )
                             }
                         </Fragment>
@@ -141,36 +179,53 @@ const PdfResume = () => {
     if (person.links.github?.length)
         links.push({
             url: `https://github.com/${person.links.github}`,
-            text: "GitHub"
+            text: "GitHub",
+            pdfImage: "/fa/github-alt.png"
         });
     if (person.links.linkedin?.length)
         links.push({
             url: `https://www.linkedin.com/in/${person.links.linkedin}`,
-            text: "LinkedIn"
+            text: "LinkedIn",
+            pdfImage: "/fa/linkedin.png"
         });
     if (person.links.web?.url?.length)
         links.push({
             url: person.links.web.url,
-            text: "Website"
+            text: "Website",
+            pdfImage: "/fa/globe.png"
         });
 
     return (
         <Document title="Resume - Ross Nelson" author="Ross Nelson" language="en">
             <Page size="LETTER" style={[PdfStyle.document]}>
-                <View>
+                <View style={[PdfStyle.header]}>
                     <Text style={[PdfStyle.personName]}>{person.name}</Text>
-                    <Text>{person.location}</Text>
-                    <Text><Link src={`mailto:{person.email}`}>{person.email}</Link></Text>
-                    <Text>{CommaSeparatedLinks(links)}</Text>
+                    <Text>
+                        <Image src="/fa/location-dot.png" style={[PdfStyle.headerImage]}/><Image src="/transparent.png" style={[PdfStyle.headerSpacerSmall]}/>{person.location}
+                        <Image src="/transparent.png" style={[PdfStyle.headerSpacer]}/>
+
+                        <Image src="/fa/envelope.png" style={[PdfStyle.headerImage]}/><Image src="/transparent.png" style={[PdfStyle.headerSpacerSmall]}/><Link src={`mailto:${person.email}`}>{person.email}</Link>
+                        <Image src="/transparent.png" style={[PdfStyle.headerSpacer]}/>
+
+                        {CommaSeparatedLinks(links)}
+                    </Text>
                 </View>
 
                 <View>
                     <Text style={[PdfStyle.sectionHeader]}>Summary Statement</Text>
+                    <View>
+                        <Image src="/black.png" style={[PdfStyle.horizontalBar]}/>
+                    </View>
+
                     <Text style={[PdfStyle.normalText]}>{data.summary}</Text>
                 </View>
 
                 <View>
                     <Text style={[PdfStyle.sectionHeader]}>Skills</Text>
+                    <View>
+                        <Image src="/black.png" style={[PdfStyle.horizontalBar]}/>
+                    </View>
+
                     {
                         skills.skills.map(skill =>
                             <Text key={skill.name}>
@@ -183,6 +238,10 @@ const PdfResume = () => {
 
                 <View>
                     <Text style={[PdfStyle.sectionHeader]}>Experience</Text>
+                    <View>
+                        <Image src="/black.png" style={[PdfStyle.horizontalBar]}/>
+                    </View>
+
                     {
                         jobs.jobs.map(job =>
                             <Fragment key={job.endDate}>
@@ -219,6 +278,10 @@ const PdfResume = () => {
 
                 <View>
                     <Text style={[PdfStyle.sectionHeader]}>Education</Text>
+                    <View>
+                        <Image src="/black.png" style={[PdfStyle.horizontalBar]}/>
+                    </View>
+
                     {
                         schools.schools.map((school: SchoolDetails) =>
                             <Fragment key={school.degree}>
@@ -243,6 +306,10 @@ const PdfResume = () => {
 
                 <View>
                     <Text style={[PdfStyle.sectionHeader]}>Memberships</Text>
+                    <View>
+                        <Image src="/black.png" style={[PdfStyle.horizontalBar]}/>
+                    </View>
+
                     {
                         memberships.organizations.map(org =>
                             <Fragment key={org.name}>

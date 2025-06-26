@@ -15,6 +15,7 @@ export interface CVData {
 
 export interface WebLinkData {
     fakey?: string | undefined,
+    pdfImage?: string | undefined,
     text: string,
     url: string
 }
