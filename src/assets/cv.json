@@ -16,6 +16,7 @@
         "Upskilling on React, Tailwind CSS, Netlify, and Go",
         "Staying up-to-date on modern .NET releases",
         "Building a data-driven résumé website/PDF generator in React",
+        "Building a Linktree-like landing website for a friend",
         "Maintaining numerous personal projects written in C# and Javascript"
       ],
       "endDate": "Present",
@@ -40,8 +41,8 @@
       "company": "Fiserv (First Data)",
       "companyLocation": "Omaha, NE, US",
       "details": [
-        "Led development of in-house softphones (C#, WPF, .NET Framework; connected to Genesys and Avaya platforms) used by both Fiserv and vendor call centers",
-        "Developed internal and external APIs in .NET",
+        "Led development of in-house softphones (C#, WPF, Genesys/Avaya VOIP platforms) used by Fiserv and vendor call centers",
+        "Developed internal and external APIs in .NET (ASP.NET MVC, ASP.NET Web API, .NET Framework, .NET Core)",
         "Spearheaded the effort to implement CI/CD across all applications within the contact center organization",
         "Mentored junior developers on WPF development, API architecture, and the Genesys platform"
       ],
