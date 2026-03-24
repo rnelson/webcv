@@ -13,25 +13,26 @@
       "company": "Layoff due to position elimination",
       "companyLocation": "Omaha, NE, US",
       "details": [
-        "Upskilling on React, Tailwind CSS, Netlify, and Go",
+        "Upskilling on React, Tailwind CSS, and Netlify",
         "Staying up-to-date on modern .NET releases",
         "Building a data-driven résumé website/PDF generator in React",
         "Building a Linktree-like landing website for a friend",
-        "Maintaining numerous personal projects written in C# and Javascript"
+        "Maintaining numerous personal projects written in C# and Javascript",
+        "Exploring Go and Rust"
       ],
       "endDate": "Present",
       "startDate": "12/2024",
-      "title": "Job Seeking/Professional Development"
+      "title": "Job Seeking and Professional Development"
     },
     {
       "company": "Nearform",
       "companyLocation": "Tramore, Co. Waterford, IE",
       "details": [
-        "Modernized legacy ASP.NET applications to .NET 6, MudBlazor, and Azure",
-        "Migrated from on-prem IdentityServer to cloud-hosted Microsoft Entra ID (formerly Azure B2C)",
+        "Modernized legacy ASP.NET applications to current .NET, MudBlazor, and Azure",
+        "Migrated from on-prem IdentityServer to cloud-hosted Microsoft Entra ID (Azure B2C)",
         "Migrated Android and iOS mobile applications from Xamarin to .NET MAUI",
         "Upskilled on Node.js and Fastify",
-        "Completed freeCodeCamp's \"Foundational C# with Microsoft\" certification"
+        "Completed freeCodeCamp's 'Foundational C# with Microsoft' certification"
       ],
       "endDate": "12/2024",
       "startDate": "6/2023",
@@ -42,9 +43,10 @@
       "companyLocation": "Omaha, NE, US",
       "details": [
         "Led development of in-house softphones (C#, WPF, Genesys/Avaya VOIP platforms) used by Fiserv and vendor call centers",
+        "Coordinated releases and task assignments for the team working on the softphones",
         "Developed internal and external APIs in .NET (ASP.NET MVC, ASP.NET Web API, .NET Framework, .NET Core)",
         "Spearheaded the effort to implement CI/CD across all applications within the contact center organization",
-        "Mentored junior developers on WPF development, API architecture, and the Genesys platform"
+        "Mentored developers on WPF development, API architecture, CI/CD, and the Genesys platform"
       ],
       "endDate": "6/2023",
       "startDate": "7/2018",
@@ -191,5 +193,5 @@
       "name": "Personal Traits"
     }
   ],
-  "summary": "Specialist in backend development with over 20 years of experience, seeking a senior-level engineering role with opportunities for mentoring, career growth, and professional development. Adept at tailoring communication to a wide array of audiences."
+  "summary": "Highly experienced software developer with over 20 years of experience, seeking a senior-level engineering role with opportunities for mentoring, career growth, and professional development. Adept at tailoring communication to a wide array of audiences."
 }
