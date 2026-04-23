@@ -204,11 +204,11 @@ const PdfResume = () => {
                         <Image src="/fa/location-dot.png" style={[PdfStyle.headerImage]}/><Image src="/transparent.png" style={[PdfStyle.headerSpacerSmall]}/>{person.location}
                         <Image src="/transparent.png" style={[PdfStyle.headerSpacer]}/>
 
-                        {person.phone?.length && person.phone.trim().length > 0 && (
-                            <Text>
+                        {person.phone !== undefined && person.phone?.trim().length > 0 && (
+                            <Fragment>
                                 <Image src="/fa/phone.png" style={[PdfStyle.headerImage]}/><Image src="/transparent.png" style={[PdfStyle.headerSpacerSmall]}/><Link src={`tel:${person.phone}`}>{person.phone}</Link>
                                 <Image src="/transparent.png" style={[PdfStyle.headerSpacer]}/>
-                            </Text>
+                            </Fragment>
                         )}
 
                         <Image src="/fa/envelope.png" style={[PdfStyle.headerImage]}/><Image src="/transparent.png" style={[PdfStyle.headerSpacerSmall]}/><Link src={`mailto:${person.email}`}>{person.email}</Link>
