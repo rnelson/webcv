@@ -69,7 +69,7 @@
   ],
   "memberships": [
     {
-      "name": "ACM",
+      "name": "Association for Computing Machinery",
       "url": "https://acm.org",
       "children": [
         {
@@ -83,6 +83,26 @@
         {
           "name": "SIGOPS",
           "url": "https://www.sigops.org"
+        }
+      ]
+    },
+    {
+      "name": "Douglas County ARES/SKYWARN",
+      "url": "https://dcaresne.wixsite.com/dcaresne",
+      "children": []
+    },
+    {
+      "name": "Rockbrook Camera's Community Photo Club",
+      "url": "https://www.rockbrookcamera.com/pages/photo-club",
+      "children": []
+    },
+    {
+      "name": "Super Dimension Fortress",
+      "url": "https://sdf.org",
+      "children": [
+        {
+          "name": "SDF Amateur Radio Club",
+          "url": "https://sdfarc.org"
         }
       ]
     }
