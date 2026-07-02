@@ -16,9 +16,9 @@
         "Upskilling on React, Tailwind CSS, and Netlify",
         "Staying up-to-date on modern .NET releases",
         "Building a data-driven résumé website/PDF generator in React",
-        "Building a Linktree-like landing website for a friend",
+        "Building a Linktree-like landing website",
         "Maintaining numerous personal projects written in C# and Javascript",
-        "Exploring Go and Rust"
+        "Exploring Go, Rust, Blazor, and Avalonia"
       ],
       "endDate": "Present",
       "startDate": "12/2024",
@@ -32,7 +32,7 @@
         "Migrated from on-prem IdentityServer to cloud-hosted Microsoft Entra ID (Azure B2C)",
         "Migrated Android and iOS mobile applications from Xamarin to .NET MAUI",
         "Upskilled on Node.js and Fastify",
-        "Completed freeCodeCamp's 'Foundational C# with Microsoft' certification"
+        "Completed .NET certification (Foundational C# with Microsoft)"
       ],
       "endDate": "12/2024",
       "startDate": "6/2023",
@@ -42,7 +42,7 @@
       "company": "Fiserv (First Data)",
       "companyLocation": "Omaha, NE, US",
       "details": [
-        "Led development of in-house softphones (C#, WPF, Genesys/Avaya VOIP platforms) used by Fiserv and vendor call centers",
+        "Led development of in-house softphones (C#, WPF, Genesys/Avaya VOIP platforms) used internally and by vendor call centers",
         "Coordinated releases and task assignments for the team working on the softphones",
         "Developed internal and external APIs in .NET (ASP.NET MVC, ASP.NET Web API, .NET Framework, .NET Core)",
         "Spearheaded the effort to implement CI/CD across all applications within the contact center organization",
@@ -50,7 +50,7 @@
       ],
       "endDate": "6/2023",
       "startDate": "7/2018",
-      "title": "Senior Application Analyst"
+      "title": "Team Lead/Senior Application Analyst"
     },
     {
       "company": "Intrado (West Corporation)",
@@ -68,6 +68,10 @@
     }
   ],
   "memberships": [
+    {
+      "name": "ARRL",
+      "url": "https://www.arrl.org"
+    },
     {
       "name": "Association for Computing Machinery",
       "url": "https://acm.org",
@@ -89,12 +93,19 @@
     {
       "name": "Douglas County ARES/SKYWARN",
       "url": "https://dcaresne.wixsite.com/dcaresne",
-      "children": []
+      "children": [
+        {
+          "name": "training coordinator"
+        }
+      ]
+    },
+    {
+      "name": "National Weather Service SKYWARN",
+      "url": "https://www.weather.gov/skywarn"
     },
     {
       "name": "Rockbrook Camera's Community Photo Club",
-      "url": "https://www.rockbrookcamera.com/pages/photo-club",
-      "children": []
+      "url": "https://www.rockbrookcamera.com/pages/photo-club"
     },
     {
       "name": "Super Dimension Fortress",
