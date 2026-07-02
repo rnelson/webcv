@@ -141,7 +141,7 @@ const CommaSeparatedLinks = (links: WebLinkData[]) => {
 };
 
 const MembershipChildren = (children?: OrganizationChildDetails[]) => {
-    if (children?.length === 0) { return <></>; }
+    if (children === undefined || children?.length === 0) { return <></>; }
 
     return (
         <>
