@@ -44,7 +44,8 @@ const Data = () => {
         person: {...cvJson.person as PersonData, links: {...cvJson.person.links as LinkData}},
         schools: {schools: [...cvJson.education as SchoolDetails[]]},
         skills: {skills: [...cvJson.skills as SkillDetails[]]},
-        summary: cvJson.summary
+        summary: cvJson.summary,
+        antiAI: cvJson.antiAI
     }
 };
 
