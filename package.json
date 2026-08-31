@@ -19,6 +19,7 @@
     "@mui/material": "^9.3.1",
     "@react-pdf/renderer": "^4.6.1",
     "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
     "react": "^19.2.6",
     "react-dom": "^19.2.8",
     "tailwindcss": "^4.3.3"
@@ -26,7 +27,6 @@
   "devDependencies": {
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
-    "@vitejs/plugin-react-swc": "^4.3.3",
     "globals": "^17.11.0",
     "typescript": "^7.0.2",
     "vite": "^8.2.2"
