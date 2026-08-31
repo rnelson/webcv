@@ -91,7 +91,7 @@
       ]
     },
     {
-      "name": "Douglas County ARES/SKYWARN",
+      "name": "Douglas County ARES",
       "url": "https://dcaresne.wixsite.com/dcaresne",
       "children": [
         {
@@ -101,7 +101,12 @@
     },
     {
       "name": "National Weather Service SKYWARN",
-      "url": "https://www.weather.gov/skywarn"
+      "url": "https://www.weather.gov/skywarn",
+      "children": [
+        {
+          "name": "trained weather spotter"
+        }
+      ]
     },
     {
       "name": "Rockbrook Camera's Community Photo Club",
