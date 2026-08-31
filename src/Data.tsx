@@ -10,7 +10,8 @@ export interface CVData {
     person: PersonData,
     schools: SchoolList,
     skills: SkillList,
-    summary: string
+    summary: string,
+    antiAI: boolean,
 }
 
 export interface WebLinkData {
