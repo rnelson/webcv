@@ -91,24 +91,6 @@
       ]
     },
     {
-      "name": "Douglas County ARES",
-      "url": "https://dcaresne.wixsite.com/dcaresne",
-      "children": [
-        {
-          "name": "Assistant Emergency Coordinator/Training"
-        }
-      ]
-    },
-    {
-      "name": "National Weather Service SKYWARN",
-      "url": "https://www.weather.gov/skywarn",
-      "children": [
-        {
-          "name": "trained weather spotter"
-        }
-      ]
-    },
-    {
       "name": "Rockbrook Camera's Community Photo Club",
       "url": "https://www.rockbrookcamera.com/pages/photo-club"
     },
@@ -146,11 +128,16 @@
       "items": [
         "C#",
         "Python",
+        "SQL",
         "Java",
         "Kotlin",
         "Javascript",
+        "Typescript",
         "PHP",
-        "C/C++"
+        "Fortran",
+        "C",
+        "C++",
+        "Objective-C"
       ],
       "list": true,
       "name": "Languages"
@@ -160,10 +147,14 @@
       "items": [
         "Windows",
         "macOS",
-        "UNIX",
-        "Linux",
         "Android",
-        "iOS"
+        "iOS",
+        "Haiku",
+        "Linux",
+        "UNIX (BSD, Solaris)",
+        "Docker",
+        "Kubernetes",
+        "Azure"
       ],
       "list": true,
       "name": "Environments"
@@ -172,10 +163,12 @@
       "fakey": "fa-browser",
       "items": [
         ".NET",
+        ".NET Framework",
         "ASP.NET",
         "ASP.NET Core",
         "Flask",
-        "React",
+        "Node/Node.js",
+        "React/ReactJS",
         "Tailwind CSS"
       ],
       "list": true,
@@ -187,7 +180,10 @@
         "Microsoft SQL Server",
         "PostgreSQL",
         "Informix",
-        "MySQL"
+        "MySQL",
+        "SQlite",
+        "Redis",
+        "MongoDB"
       ],
       "list": true,
       "name": "Databases"
@@ -195,8 +191,9 @@
     {
       "fakey": "fa-briefcase",
       "items": [
-        "Interviewing",
-        "mentoring junior developers",
+        "Mentoring junior developers",
+        "communication",
+        "interviewing",
         "upskilling colleagues"
       ],
       "list": true,
@@ -207,13 +204,53 @@
       "items": [
         "Constant upskilling",
         "improvement-driven",
+        "organized",
         "resourceful",
-        "adaptable"
+        "adaptable",
+        "problem solver"
       ],
       "list": true,
       "name": "Personal Traits"
     }
   ],
-  "summary": "Highly experienced software developer with over 20 years of experience, seeking a senior-level engineering role with opportunities for mentoring, career growth, and professional development. Adept at tailoring communication to a wide array of audiences.",
-  "antiAI": false
+  "summary": "Highly experienced software developer with over 20 years of experience, seeking a people/project management or senior-level engineering role with opportunities for mentoring, career growth, and professional development. Adept at tailoring communication to a wide array of audiences.",
+  "antiAI": false,
+  "volunteering": [
+    {
+      "name": "Douglas County ARES",
+      "url": "https://dcaresne.wixsite.com/dcaresne",
+      "children": [
+        {
+          "name": "Assistant Emergency Coordinator/Training"
+        }
+      ]
+    },
+    {
+      "name": "Keep Omaha Beautiful",
+      "url": "https://www.keepomahabeautiful.org",
+      "children": [
+        {
+          "name": "Photography"
+        }
+      ]
+    },
+    {
+      "name": "National Weather Service SKYWARN",
+      "url": "https://www.weather.gov/skywarn",
+      "children": [
+        {
+          "name": "Trained weather spotter"
+        }
+      ]
+    },
+    {
+      "name": "NETWAR",
+      "url": "https://www.netwar.org",
+      "children": [
+        {
+          "name": "Photography"
+        }
+      ]
+    }
+  ]
 }

@@ -16,7 +16,7 @@ export interface MembershipList {
     organizations: OrganizationDetails[]
 }
 
-const Children = (children?: OrganizationChildDetails[]) => {
+export const Children = (children?: OrganizationChildDetails[]) => {
     if (children === undefined || children?.length === 0) { return <></>; }
 
     return (

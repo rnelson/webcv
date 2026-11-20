@@ -3,6 +3,7 @@ import {JobDetails, JobList} from "./components/Job.tsx";
 import {SkillDetails, SkillList} from "./components/Skill.tsx";
 import {SchoolDetails, SchoolList} from "./components/Education.tsx";
 import {MembershipList, OrganizationDetails} from "./components/Memberships.tsx";
+import {VolunteerList} from "./components/Volunteering.tsx";
 
 export interface CVData {
     jobs: JobList,
@@ -10,6 +11,7 @@ export interface CVData {
     person: PersonData,
     schools: SchoolList,
     skills: SkillList,
+    volunteering: VolunteerList,
     summary: string,
     antiAI: boolean,
 }
@@ -44,6 +46,7 @@ const Data = () => {
         person: {...cvJson.person as PersonData, links: {...cvJson.person.links as LinkData}},
         schools: {schools: [...cvJson.education as SchoolDetails[]]},
         skills: {skills: [...cvJson.skills as SkillDetails[]]},
+        volunteering: {organizations: [...cvJson.volunteering as OrganizationDetails[]]},
         summary: cvJson.summary,
         antiAI: cvJson.antiAI
     }

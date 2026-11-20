@@ -8,6 +8,7 @@ import Skills from "./components/Skill.tsx";
 import Education from "./components/Education.tsx";
 import Memberships from "./components/Memberships.tsx";
 import ForkMe from "./components/ForkMe.tsx";
+import Volunteering from "./components/Volunteering.tsx";
 
 const Resume = (data: CVData) => {
     return (
@@ -17,6 +18,7 @@ const Resume = (data: CVData) => {
             <Experience {...data.jobs} />
             <Education {...data.schools} />
             <Memberships {...data.memberships} />
+            <Volunteering {...data.volunteering} />
             <Contact {...data} />
         </>
     );
