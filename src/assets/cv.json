@@ -14,11 +14,11 @@
       "companyLocation": "Omaha, NE, US",
       "details": [
         "Upskilling on React, Tailwind CSS, and Netlify",
-        "Staying up-to-date on modern .NET releases",
+        "Staying up-to-date on .NET releases",
         "Building a data-driven résumé website/PDF generator in React",
-        "Building a Linktree-like landing website",
+        "Building a Linktree-like landing website in React",
         "Maintaining numerous personal projects written in C# and Javascript",
-        "Exploring Go, Rust, Blazor, and Avalonia"
+        "Exploring Blazor, .NET Aspire, Go, and Rust"
       ],
       "endDate": "Present",
       "startDate": "12/2024",
@@ -28,10 +28,10 @@
       "company": "Nearform",
       "companyLocation": "Tramore, Co. Waterford, IE",
       "details": [
-        "Modernized legacy ASP.NET applications to current .NET, MudBlazor, and Azure",
-        "Migrated from on-prem IdentityServer to cloud-hosted Microsoft Entra ID (Azure B2C)",
-        "Led the migration of Android and iOS mobile applications from Xamarin to .NET MAUI",
+        "Modernized legacy ASP.NET applications to modern .NET with MudBlazor, hosted on Azure",
         "Operated as US technical contact for offshore development team",
+        "Led the migration of Android and iOS mobile applications from Xamarin to .NET MAUI",
+        "Migrated from on-prem IdentityServer to cloud-hosted Microsoft Entra ID (Azure B2C)",
         "Upskilled on Node.js and Fastify"
       ],
       "endDate": "12/2024",
@@ -39,38 +39,41 @@
       "title": "Senior Software Developer"
     },
     {
-      "company": "Fiserv (First Data)",
+      "company": "Fiserv",
       "companyLocation": "Omaha, NE, US",
       "details": [
-        "Led development of in-house softphones (C#, WPF, Genesys/Avaya VOIP platforms) used internally and by vendor call centers",
-        "Coordinated releases and task assignments for the team working on the softphones",
+        "Oversaw development of in-house softphones used both internally and by vendor call centers",
+        "Coordinated releases and task assignments for the softphone team",
         "Spearheaded the effort to implement CI/CD across all applications within the contact center organization",
         "Mentored developers on WPF development, API architecture, CI/CD, and the Genesys platform",
-        "Developed internal and external APIs in .NET (ASP.NET MVC, ASP.NET Web API, .NET Framework, .NET Core)"
+        "Developed internal and external APIs in .NET",
+        "Assisted with IBM watsonx AI functionality and IBM Cloud application hosting",
+        "Built and deployed numerous supporting APIs used by IVRs"
       ],
       "endDate": "6/2023",
       "startDate": "7/2018",
-      "title": "Team Lead/Senior Application Analyst"
+      "title": "Senior Application Analyst"
     },
     {
-      "company": "Intrado (West Corporation)",
+      "company": "West Corporation",
       "companyLocation": "Omaha, NE, US",
       "details": [
         "Served as development team lead dedicated to a multi-billion dollar retail client",
+        "Scheduled projects for the development team",
         "Represented the development team on internal and client meetings",
-        "Mentored developers on PHP, Java, internal platforms, and Spring Boot",
+        "Owned the effort to replace a critical piece of our platform with a highly available Spring Boot service using RabbitMQ",
+        "Mentored developers on PHP, Java, Spring Boot, and proprietary internal platforms",
         "Authored development policies and standards for the team",
-        "Scheduled development projects for the team",
-        "Built voice call notification applications, backend services, libraries, and internal tools"
+        "Built voice call notification applications, backend services, libraries, and internal tools in Java and PHP"
       ],
       "endDate": "7/2018",
       "startDate": "7/2015",
-      "title": "Team Lead/Software Analyst"
+      "title": "Team Lead, Software Analyst"
     }
   ],
   "memberships": [
     {
-      "name": "ARRL",
+      "name": "American Radio Relay League (ARRL)",
       "url": "https://www.arrl.org"
     },
     {
@@ -151,25 +154,33 @@
         "iOS",
         "Haiku",
         "Linux",
-        "UNIX (BSD, Solaris)",
+        "UNIX",
+        "Genesys",
+        "Avaya",
         "Docker",
         "Kubernetes",
-        "Azure"
+        "Azure",
+        "Jenkins",
+        "GitHub",
+        "Bitbucket",
+        "RabbitMQ"
       ],
       "list": true,
-      "name": "Environments"
+      "name": "Platforms"
     },
     {
       "fakey": "fa-browser",
       "items": [
         ".NET",
         ".NET Framework",
+        ".NET Core",
         "ASP.NET",
-        "ASP.NET Core",
+        "WinForms/WPF",
         "Flask",
         "Node/Node.js",
         "React/ReactJS",
-        "Tailwind CSS"
+        "Tailwind CSS",
+        "Terraform"
       ],
       "list": true,
       "name": "Frameworks"
