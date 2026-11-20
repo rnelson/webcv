@@ -15,12 +15,12 @@ const Header = (data: CVData) => {
                 <div className="flex justify-center">
                     <img
                         id="profile-picture"
-                        className="max-w-[150px] lg:max-w-[250px] m-2 rounded-full"
+                        className="max-w-37.5 lg:max-w-62.5 m-2 rounded-full"
                         src={person.image}
                         alt={`Profile picture of ${person.name}`} />
                 </div>
             )}
-            <div className="grid grid-cols-4 m-2">
+            <div className="grid grid-cols-1 ml-30 mr-30 mt-2 mb-2">
                 <div className="col-start-1 col-span-4 md:col-start-2 md:col-span-2 flex justify-center text-md/[1.6] lg:text-xl/[1.6] font-light">{data.summary}</div>
             </div>
         </header>
