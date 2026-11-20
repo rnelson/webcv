@@ -1,6 +1,6 @@
 ﻿import {SkillList} from "./Skill.tsx";
 import {Document, Font, Image, Link, Page, StyleSheet, Text, View} from '@react-pdf/renderer';
-import Data, {PersonData, WebLinkData} from "../Data.tsx";
+import Data, {WebLinkData} from "../Data.tsx";
 import {JobList} from "./Job.tsx";
 import {Fragment} from "react";
 import {SchoolDetails, SchoolList} from "./Education.tsx";
